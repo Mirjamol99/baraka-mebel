@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aloqa — Baraka Mebel</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="h-20 flex items-center justify-between">
+
+                <!-- LOGO -->
+
+                <a href="index.html" class="flex items-center gap-3">
+
+                    <div class="w-11 h-11 rounded-xl bg-stone-900 text-white flex items-center justify-center">
+                        <span class="text-xl font-extrabold">B</span>
+                    </div>
+
+                    <div>
+                        <h1 class="font-extrabold text-lg leading-none">
+                            BARAKA
+                        </h1>
+
+                        <p class="text-xs tracking-[0.25em] text-stone-500 mt-1">
+                            MEBEL
+                        </p>
+                    </div>
+
+                </a>
+
+
+                <!-- DESKTOP NAV -->
+
+                <nav class="hidden md:flex items-center gap-8">
+
+                    <a
+                        href="index.html"
+                        class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition"
+                    >
+                        Bosh sahifa
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition"
+                    >
+                        Mahsulotlar
+                    </a>
+
+                    <a
+                        href="services.html"
+                        class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition"
+                    >
+                        Xizmatlar
+                    </a>
+
+                    <a
+                        href="about.html"
+                        class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition"
+                    >
+                        Biz haqimizda
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="text-sm font-semibold text-stone-900"
+                    >
+                        Aloqa
+                    </a>
+
+                </nav>
+
+
+                <!-- CTA -->
+
+                <a
+                    href="contact.html"
+                    class="hidden sm:inline-flex bg-stone-900 text-white px-5 py-3 rounded-xl text-sm font-semibold hover:bg-stone-700 transition"
+                >
+                    Buyurtma berish
+                </a>
+
+
+                <!-- MOBILE -->
+
+                <button
+                    id="menuBtn"
+                    class="md:hidden w-11 h-11 rounded-xl border border-stone-200 flex items-center justify-center text-xl"
+                    aria-label="Menyu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <div id="mobileMenu" class="hidden md:hidden pb-5">
+
+                <nav class="flex flex-col gap-2">
+
+                    <a
+                        href="index.html"
+                        class="px-4 py-3 rounded-xl hover:bg-stone-100"
+                    >
+                        Bosh sahifa
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="px-4 py-3 rounded-xl hover:bg-stone-100"
+                    >
+                        Mahsulotlar
+                    </a>
+
+                    <a
+                        href="services.html"
+                        class="px-4 py-3 rounded-xl hover:bg-stone-100"
+                    >
+                        Xizmatlar
+                    </a>
+
+                    <a
+                        href="about.html"
+                        class="px-4 py-3 rounded-xl hover:bg-stone-100"
+                    >
+                        Biz haqimizda
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="px-4 py-3 rounded-xl bg-stone-100 font-semibold"
+                    >
+                        Aloqa
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="mt-2 text-center bg-stone-900 text-white px-4 py-3 rounded-xl font-semibold"
+                    >
+                        Buyurtma berish
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="pt-20">
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="py-16 sm:py-20 lg:py-24">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="max-w-3xl">
+
+                    <span class="inline-flex items-center gap-2 bg-stone-100 border border-stone-200 px-4 py-2 rounded-full text-sm font-semibold text-stone-600">
+
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+
+                        Biz bilan bog‘laning
+
+                    </span>
+
+
+                    <h2 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+
+                        Loyihangizni
+                        <span class="text-stone-500">
+                            birgalikda boshlaymiz.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="mt-6 text-base sm:text-lg text-stone-600 leading-8 max-w-2xl">
+
+                        Mebel buyurtma qilish, narx haqida ma’lumot olish
+                        yoki loyihangizni muhokama qilish uchun biz bilan
+                        bog‘laning.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT AREA ================= -->
+
+        <section class="pb-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-5 gap-8 lg:gap-12">
+
+
+                    <!-- ================= INFO ================= -->
+
+                    <div class="lg:col-span-2">
+
+                        <div class="bg-stone-900 text-white rounded-[2rem] p-7 sm:p-9 h-full">
+
+                            <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                                Aloqa ma’lumotlari
+                            </span>
+
+
+                            <h3 class="mt-4 text-2xl sm:text-3xl font-extrabold">
+                                Savollaringiz bormi?
+                            </h3>
+
+
+                            <p class="mt-4 text-stone-400 leading-7">
+                                Biz bilan bog‘laning. Mutaxassislarimiz
+                                sizga kerakli ma’lumotlarni taqdim etadi.
+                            </p>
+
+
+                            <div class="mt-10 space-y-6">
+
+
+                                <!-- PHONE -->
+
+                                <a
+                                    href="tel:+998901234567"
+                                    class="flex gap-4 group"
+                                >
+
+                                    <div class="shrink-0 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-xl">
+                                        ☎
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-sm text-stone-500">
+                                            Telefon
+                                        </p>
+
+                                        <p class="mt-1 font-semibold group-hover:text-stone-300 transition">
+                                            +998 90 123 45 67
+                                        </p>
+
+                                    </div>
+
+                                </a>
+
+
+                                <!-- LOCATION -->
+
+                                <div class="flex gap-4">
+
+                                    <div class="shrink-0 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-xl">
+                                        📍
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-sm text-stone-500">
+                                            Manzil
+                                        </p>
+
+                                        <p class="mt-1 font-semibold">
+                                            Andijon, O‘zbekiston
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- WORKING HOURS -->
+
+                                <div class="flex gap-4">
+
+                                    <div class="shrink-0 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-xl">
+                                        ◷
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-sm text-stone-500">
+                                            Ish vaqti
+                                        </p>
+
+                                        <p class="mt-1 font-semibold">
+                                            Du — Sha: 09:00 — 19:00
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SOCIAL -->
+
+                            <div class="mt-12 pt-7 border-t border-white/10">
+
+                                <p class="text-sm text-stone-500">
+                                    Ijtimoiy tarmoqlar
+                                </p>
+
+                                <div class="mt-4 flex gap-3">
+
+                                    <a
+                                        href="#"
+                                        class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center font-bold hover:bg-white hover:text-stone-900 transition"
+                                    >
+                                        tg
+                                    </a>
+
+                                    <a
+                                        href="#"
+                                        class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center font-bold hover:bg-white hover:text-stone-900 transition"
+                                    >
+                                        ig
+                                    </a>
+
+                                    <a
+                                        href="#"
+                                        class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center font-bold hover:bg-white hover:text-stone-900 transition"
+                                    >
+                                        in
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= FORM ================= -->
+
+                    <div class="lg:col-span-3">
+
+                        <div class="bg-white border border-stone-200 rounded-[2rem] p-6 sm:p-9">
+
+                            <div>
+
+                                <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                                    Buyurtma formasi
+                                </span>
+
+                                <h3 class="mt-3 text-2xl sm:text-3xl font-extrabold">
+                                    Loyihangiz haqida yozing
+                                </h3>
+
+                                <p class="mt-3 text-stone-500">
+                                    Formani to‘ldiring, biz tez orada siz bilan bog‘lanamiz.
+                                </p>
+
+                            </div>
+
+
+                            <form id="contactForm" class="mt-8 space-y-5">
+
+
+                                <!-- NAME + PHONE -->
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                                    <div>
+
+                                        <label
+                                            for="name"
+                                            class="block text-sm font-semibold mb-2"
+                                        >
+                                            Ismingiz
+                                        </label>
+
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            required
+                                            placeholder="Ismingizni kiriting"
+                                            class="w-full px-4 py-3.5 rounded-xl border border-stone-200 bg-stone-50 outline-none focus:bg-white focus:ring-2 focus:ring-stone-300 transition"
+                                        >
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <label
+                                            for="phone"
+                                            class="block text-sm font-semibold mb-2"
+                                        >
+                                            Telefon raqamingiz
+                                        </label>
+
+                                        <input
+                                            id="phone"
+                                            type="tel"
+                                            required
+                                            placeholder="+998 90 123 45 67"
+                                            class="w-full px-4 py-3.5 rounded-xl border border-stone-200 bg-stone-50 outline-none focus:bg-white focus:ring-2 focus:ring-stone-300 transition"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SERVICE -->
+
+                                <div>
+
+                                    <label
+                                        for="service"
+                                        class="block text-sm font-semibold mb-2"
+                                    >
+                                        Qanday xizmat kerak?
+                                    </label>
+
+                                    <select
+                                        id="service"
+                                        required
+                                        class="w-full px-4 py-3.5 rounded-xl border border-stone-200 bg-stone-50 outline-none focus:bg-white focus:ring-2 focus:ring-stone-300 transition"
+                                    >
+
+                                        <option value="">
+                                            Xizmatni tanlang
+                                        </option>
+
+                                        <option>
+                                            Oshxona mebeli
+                                        </option>
+
+                                        <option>
+                                            Yotoqxona mebeli
+                                        </option>
+
+                                        <option>
+                                            Divan
+                                        </option>
+
+                                        <option>
+                                            Ofis mebeli
+                                        </option>
+
+                                        <option>
+                                            Individual buyurtma
+                                        </option>
+
+                                        <option>
+                                            Boshqa
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- BUDGET -->
+
+                                <div>
+
+                                    <label
+                                        for="budget"
+                                        class="block text-sm font-semibold mb-2"
+                                    >
+                                        Taxminiy budjet
+                                    </label>
+
+                                    <select
+                                        id="budget"
+                                        class="w-full px-4 py-3.5 rounded-xl border border-stone-200 bg-stone-50 outline-none focus:bg-white focus:ring-2 focus:ring-stone-300 transition"
+                                    >
+
+                                        <option value="">
+                                            Budjetni tanlang
+                                        </option>
+
+                                        <option>
+                                            5 mln so‘mgacha
+                                        </option>
+
+                                        <option>
+                                            5 — 10 mln so‘m
+                                        </option>
+
+                                        <option>
+                                            10 — 20 mln so‘m
+                                        </option>
+
+                                        <option>
+                                            20 mln so‘mdan yuqori
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- MESSAGE -->
+
+                                <div>
+
+                                    <label
+                                        for="message"
+                                        class="block text-sm font-semibold mb-2"
+                                    >
+                                        Xabaringiz
+                                    </label>
+
+                                    <textarea
+                                        id="message"
+                                        rows="5"
+                                        required
+                                        placeholder="Buyurtmangiz haqida qisqacha yozing..."
+                                        class="w-full px-4 py-3.5 rounded-xl border border-stone-200 bg-stone-50 outline-none focus:bg-white focus:ring-2 focus:ring-stone-300 transition resize-none"
+                                    ></textarea>
+
+                                </div>
+
+
+                                <!-- SUBMIT -->
+
+                                <button
+                                    type="submit"
+                                    class="w-full bg-stone-900 text-white py-4 rounded-xl font-bold hover:bg-stone-700 transition flex items-center justify-center gap-2"
+                                >
+
+                                    <span>
+                                        Xabar yuborish
+                                    </span>
+
+                                    <span>
+                                        →
+                                    </span>
+
+                                </button>
+
+
+                                <p class="text-xs text-stone-400 text-center">
+                                    Ma’lumotlaringiz faqat murojaatingizni ko‘rib chiqish uchun ishlatiladi.
+                                </p>
+
+                            </form>
+
+
+                            <!-- SUCCESS -->
+
+                            <div
+                                id="successMessage"
+                                class="hidden mt-6 rounded-2xl border border-green-200 bg-green-50 p-5"
+                            >
+
+                                <div class="flex gap-4">
+
+                                    <div class="shrink-0 w-11 h-11 rounded-xl bg-green-600 text-white flex items-center justify-center">
+                                        ✓
+                                    </div>
+
+                                    <div>
+
+                                        <h4 class="font-bold text-green-900">
+                                            Xabaringiz yuborildi!
+                                        </h4>
+
+                                        <p class="mt-1 text-sm text-green-700">
+                                            Rahmat! Tez orada siz bilan bog‘lanamiz.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="py-20 bg-white">
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center">
+
+                    <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                        FAQ
+                    </span>
+
+                    <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold">
+                        Ko‘p beriladigan savollar
+                    </h2>
+
+                </div>
+
+
+                <div class="mt-10 space-y-4">
+
+
+                    <details class="group border border-stone-200 rounded-2xl p-5">
+
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-5 font-bold">
+
+                            Buyurtma qancha vaqtda tayyor bo‘ladi?
+
+                            <span class="text-xl group-open:rotate-45 transition">
+                                +
+                            </span>
+
+                        </summary>
+
+                        <p class="mt-4 text-sm text-stone-500 leading-7">
+                            Buyurtma turi va hajmiga qarab muddat belgilanadi.
+                            Aniq muddat buyurtma tasdiqlangandan keyin aytiladi.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group border border-stone-200 rounded-2xl p-5">
+
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-5 font-bold">
+
+                            Individual o‘lchamda mebel tayyorlaysizlarmi?
+
+                            <span class="text-xl group-open:rotate-45 transition">
+                                +
+                            </span>
+
+                        </summary>
+
+                        <p class="mt-4 text-sm text-stone-500 leading-7">
+                            Ha. Xonangiz o‘lchamiga va ehtiyojingizga mos
+                            individual mebel loyihalarini tayyorlaymiz.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group border border-stone-200 rounded-2xl p-5">
+
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-5 font-bold">
+
+                            Yetkazib berish xizmati bormi?
+
+                            <span class="text-xl group-open:rotate-45 transition">
+                                +
+                            </span>
+
+                        </summary>
+
+                        <p class="mt-4 text-sm text-stone-500 leading-7">
+                            Ha, tayyor mahsulotni kelishilgan manzilga
+                            yetkazib berish va o‘rnatish xizmatlari mavjud.
+                        </p>
+
+                    </details>
+
+
+                    <details class="group border border-stone-200 rounded-2xl p-5">
+
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-5 font-bold">
+
+                            Narxni qanday bilsam bo‘ladi?
+
+                            <span class="text-xl group-open:rotate-45 transition">
+                                +
+                            </span>
+
+                        </summary>
+
+                        <p class="mt-4 text-sm text-stone-500 leading-7">
+                            Mahsulot narxi o‘lcham, material va dizaynga
+                            qarab farq qilishi mumkin. Forma orqali
+                            murojaat qilsangiz, sizga individual hisob-kitob beramiz.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="bg-stone-900 rounded-[2rem] p-8 sm:p-12 lg:p-16 text-center text-white">
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold">
+                        Mebelingizni bugundan rejalashtiring.
+                    </h2>
+
+                    <p class="mt-5 text-stone-400 max-w-2xl mx-auto leading-7">
+                        G‘oyangizni bizga ayting — siz uchun mos
+                        yechimni birgalikda topamiz.
+                    </p>
+
+                    <a
+                        href="tel:+998901234567"
+                        class="inline-flex mt-8 bg-white text-stone-900 px-7 py-4 rounded-xl font-bold hover:bg-stone-200 transition"
+                    >
+                        Hozir qo‘ng‘iroq qilish
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-stone-950 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- BRAND -->
+
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 rounded-xl bg-white text-stone-900 flex items-center justify-center font-extrabold">
+                            B
+                        </div>
+
+                        <div>
+
+                            <p class="font-extrabold">
+                                BARAKA
+                            </p>
+
+                            <p class="text-xs tracking-[0.2em] text-stone-500">
+                                MEBEL
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="mt-5 text-sm text-stone-500 leading-6">
+                        Sifatli mebel — qulay hayot.
+                    </p>
+
+                </div>
+
+
+                <!-- LINKS -->
+
+                <div>
+
+                    <h3 class="font-bold">
+                        Tezkor havolalar
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-3 text-sm text-stone-500">
+
+                        <a href="index.html" class="hover:text-white transition">
+                            Bosh sahifa
+                        </a>
+
+                        <a href="products.html" class="hover:text-white transition">
+                            Mahsulotlar
+                        </a>
+
+                        <a href="services.html" class="hover:text-white transition">
+                            Xizmatlar
+                        </a>
+
+                        <a href="about.html" class="hover:text-white transition">
+                            Biz haqimizda
+                        </a>
+
+                        <a href="contact.html" class="hover:text-white transition">
+                            Aloqa
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICES -->
+
+                <div>
+
+                    <h3 class="font-bold">
+                        Xizmatlar
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-3 text-sm text-stone-500">
+
+                        <p>Individual mebel</p>
+                        <p>O‘lchov olish</p>
+                        <p>Dizayn</p>
+                        <p>Yetkazib berish</p>
+                        <p>O‘rnatish</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div>
+
+                    <h3 class="font-bold">
+                        Aloqa
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-4 text-sm text-stone-500">
+
+                        <a href="tel:+998901234567" class="hover:text-white transition">
+                            📞 +998 90 123 45 67
+                        </a>
+
+                        <p>
+                            📍 Andijon, O‘zbekiston
+                        </p>
+
+                        <p>
+                            🕐 Dushanba — Shanba
+                            <br>
+                            09:00 — 19:00
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="mt-12 pt-6 border-t border-white/10 text-sm text-stone-600">
+
+                © 2026 Baraka Mebel. Barcha huquqlar himoyalangan.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // MOBILE MENU
+
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+
+            mobileMenu.classList.toggle("hidden");
+
+        });
+
+
+        // CONTACT FORM
+
+        const contactForm = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
+
+        contactForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            contactForm.reset();
+
+            successMessage.classList.remove("hidden");
+
+            successMessage.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Yotoqxona garnituri — Baraka Mebel</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-900">
+
+  <!-- ================= HEADER ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 bg-stone-900 text-white rounded-xl flex items-center justify-center">
+            <span class="font-bold text-lg">BM</span>
+          </div>
+
+          <div>
+            <h1 class="font-extrabold text-lg tracking-tight">
+              BARAKA
+            </h1>
+
+            <p class="text-[10px] tracking-[0.25em] text-stone-500 -mt-1">
+              MEBEL
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8">
+
+          <a href="index.html"
+             class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">
+            Bosh sahifa
+          </a>
+
+          <a href="products.html"
+             class="text-sm font-medium text-stone-900">
+            Mahsulotlar
+          </a>
+
+          <a href="services.html"
+             class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">
+            Xizmatlar
+          </a>
+
+          <a href="about.html"
+             class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">
+            Biz haqimizda
+          </a>
+
+          <a href="contact.html"
+             class="text-sm font-medium text-stone-600 hover:text-stone-900 transition">
+            Aloqa
+          </a>
+
+        </nav>
+
+        <!-- Desktop CTA -->
+        <button
+          onclick="openOrderModal()"
+          class="hidden md:flex items-center gap-2 bg-stone-900 text-white px-5 py-3 rounded-xl text-sm font-semibold hover:bg-stone-800 transition">
+
+          Buyurtma berish
+
+          <svg class="w-4 h-4"
+               fill="none"
+               stroke="currentColor"
+               viewBox="0 0 24 24">
+
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+
+        </button>
+
+        <!-- Mobile Button -->
+        <button
+          id="menuBtn"
+          class="md:hidden w-11 h-11 rounded-xl border border-stone-200 flex items-center justify-center">
+
+          <svg class="w-6 h-6"
+               fill="none"
+               stroke="currentColor"
+               viewBox="0 0 24 24">
+
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden pb-5">
+
+        <div class="flex flex-col gap-2">
+
+          <a href="index.html"
+             class="px-4 py-3 rounded-xl hover:bg-stone-100">
+            Bosh sahifa
+          </a>
+
+          <a href="products.html"
+             class="px-4 py-3 rounded-xl bg-stone-100 font-semibold">
+            Mahsulotlar
+          </a>
+
+          <a href="services.html"
+             class="px-4 py-3 rounded-xl hover:bg-stone-100">
+            Xizmatlar
+          </a>
+
+          <a href="about.html"
+             class="px-4 py-3 rounded-xl hover:bg-stone-100">
+            Biz haqimizda
+          </a>
+
+          <a href="contact.html"
+             class="px-4 py-3 rounded-xl hover:bg-stone-100">
+            Aloqa
+          </a>
+
+          <button
+            onclick="openOrderModal()"
+            class="mt-2 bg-stone-900 text-white px-4 py-3 rounded-xl font-semibold">
+
+            Buyurtma berish
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="pt-28">
+
+    <!-- Breadcrumb -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+
+      <div class="flex items-center gap-2 text-sm text-stone-500">
+
+        <a href="index.html" class="hover:text-stone-900">
+          Bosh sahifa
+        </a>
+
+        <span>/</span>
+
+        <a href="products.html" class="hover:text-stone-900">
+          Mahsulotlar
+        </a>
+
+        <span>/</span>
+
+        <span class="text-stone-900">
+          Yotoqxona garnituri
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCT ================= -->
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+
+        <!-- Gallery -->
+        <div>
+
+          <!-- Main Image -->
+          <div class="aspect-square rounded-3xl overflow-hidden bg-stone-200">
+
+            <img
+              id="mainImage"
+              src="assets/images/bedroom-1.jpg"
+              alt="Yotoqxona garnituri"
+              class="w-full h-full object-cover transition duration-500"
+            />
+
+          </div>
+
+
+          <!-- Thumbnails -->
+          <div class="grid grid-cols-4 gap-3 mt-4">
+
+            <button
+              onclick="changeImage('assets/images/bedroom-1.jpg', this)"
+              class="thumbnail rounded-xl overflow-hidden border-2 border-stone-900">
+
+              <img
+                src="assets/images/bedroom-1.jpg"
+                class="w-full aspect-square object-cover"
+                alt=""
+              />
+
+            </button>
+
+            <button
+              onclick="changeImage('assets/images/sofa-1.jpg', this)"
+              class="thumbnail rounded-xl overflow-hidden border-2 border-transparent hover:border-stone-400">
+
+              <img
+                src="assets/images/sofa-1.jpg"
+                class="w-full aspect-square object-cover"
+                alt=""
+              />
+
+            </button>
+
+            <button
+              onclick="changeImage('assets/images/kitchen-1.jpg', this)"
+              class="thumbnail rounded-xl overflow-hidden border-2 border-transparent hover:border-stone-400">
+
+              <img
+                src="assets/images/kitchen-1.jpg"
+                class="w-full aspect-square object-cover"
+                alt=""
+              />
+
+            </button>
+
+            <button
+              onclick="changeImage('assets/images/about.jpg', this)"
+              class="thumbnail rounded-xl overflow-hidden border-2 border-transparent hover:border-stone-400">
+
+              <img
+                src="assets/images/about.jpg"
+                class="w-full aspect-square object-cover"
+                alt=""
+              />
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Product Info -->
+        <div class="flex flex-col justify-center">
+
+          <!-- Category -->
+          <p class="text-sm font-semibold text-stone-500 uppercase tracking-widest mb-3">
+            Yotoqxona mebellari
+          </p>
+
+
+          <!-- Title -->
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            Yotoqxona garnituri
+          </h1>
+
+
+          <!-- Rating -->
+          <div class="flex items-center gap-3 mt-5">
+
+            <div class="flex text-amber-500">
+
+              ★ ★ ★ ★ ★
+
+            </div>
+
+            <span class="text-sm text-stone-500">
+              4.9 / 5 · 24 ta baho
+            </span>
+
+          </div>
+
+
+          <!-- Price -->
+          <div class="mt-7">
+
+            <p class="text-3xl font-extrabold">
+              15 500 000 so‘m
+            </p>
+
+            <p class="text-sm text-stone-500 mt-1">
+              Yetkazib berish va o‘rnatish xizmatlari mavjud
+            </p>
+
+          </div>
+
+
+          <!-- Description -->
+          <p class="text-stone-600 leading-7 mt-7">
+            Zamonaviy dizayn va yuqori sifatli materiallardan tayyorlangan
+            yotoqxona garnituri. Xonangizga qulaylik, tartib va zamonaviy
+            ko‘rinish beradi.
+          </p>
+
+
+          <!-- Colors -->
+          <div class="mt-8">
+
+            <div class="flex items-center justify-between mb-3">
+
+              <span class="font-semibold">
+                Rang
+              </span>
+
+              <span id="selectedColor"
+                    class="text-sm text-stone-500">
+                Krem
+              </span>
+
+            </div>
+
+
+            <div class="flex gap-3">
+
+              <button
+                onclick="selectColor('Krem', this)"
+                class="colorBtn w-10 h-10 rounded-full bg-[#e7ded2] border-4 border-white ring-2 ring-stone-900">
+              </button>
+
+              <button
+                onclick="selectColor('Jigarrang', this)"
+                class="colorBtn w-10 h-10 rounded-full bg-[#795548] border-4 border-white ring-2 ring-transparent">
+              </button>
+
+              <button
+                onclick="selectColor('Kulrang', this)"
+                class="colorBtn w-10 h-10 rounded-full bg-[#777777] border-4 border-white ring-2 ring-transparent">
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- Product Specs -->
+          <div class="grid grid-cols-2 gap-3 mt-8">
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-4">
+
+              <p class="text-xs text-stone-500">
+                O‘lcham
+              </p>
+
+              <p class="font-semibold mt-1">
+                180 × 200 cm
+              </p>
+
+            </div>
+
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-4">
+
+              <p class="text-xs text-stone-500">
+                Material
+              </p>
+
+              <p class="font-semibold mt-1">
+                MDF Premium
+              </p>
+
+            </div>
+
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-4">
+
+              <p class="text-xs text-stone-500">
+                Ishlab chiqarish
+              </p>
+
+              <p class="font-semibold mt-1">
+                7–14 kun
+              </p>
+
+            </div>
+
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-4">
+
+              <p class="text-xs text-stone-500">
+                Kafolat
+              </p>
+
+              <p class="font-semibold mt-1">
+                12 oy
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Buttons -->
+          <div class="grid sm:grid-cols-2 gap-3 mt-8">
+
+            <button
+              onclick="openOrderModal()"
+              class="bg-stone-900 text-white py-4 px-6 rounded-2xl font-bold hover:bg-stone-800 transition flex items-center justify-center gap-2">
+
+              <svg class="w-5 h-5"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9h14l-2-9M10 17h.01M14 17h.01"/>
+
+              </svg>
+
+              Buyurtma berish
+
+            </button>
+
+
+            <a
+              href="tel:+998901234567"
+              class="border border-stone-300 bg-white py-4 px-6 rounded-2xl font-bold hover:bg-stone-100 transition flex items-center justify-center gap-2">
+
+              <svg class="w-5 h-5"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a2 2 0 011.94 1.515l.7 2.805a2 2 0 01-.45 1.9L8.7 10.3a16 16 0 006 6l1.08-1.77a2 2 0 011.9-.45l2.805.7A2 2 0 0122 16.72V20a2 2 0 01-2 2C10.06 22 2 13.94 2 4a2 2 0 012-2z"/>
+
+              </svg>
+
+              Qo‘ng‘iroq qilish
+
+            </a>
+
+          </div>
+
+
+          <!-- Benefits -->
+          <div class="grid sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-stone-200">
+
+            <div>
+
+              <div class="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center mb-3">
+                🚚
+              </div>
+
+              <p class="font-semibold text-sm">
+                Yetkazib berish
+              </p>
+
+              <p class="text-xs text-stone-500 mt-1">
+                Andijon bo‘ylab
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <div class="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center mb-3">
+                🔧
+              </div>
+
+              <p class="font-semibold text-sm">
+                O‘rnatish
+              </p>
+
+              <p class="text-xs text-stone-500 mt-1">
+                Mutaxassislar tomonidan
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <div class="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center mb-3">
+                🛡️
+              </div>
+
+              <p class="font-semibold text-sm">
+                Kafolat
+              </p>
+
+              <p class="text-xs text-stone-500 mt-1">
+                12 oygacha
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DESCRIPTION ================= -->
+
+    <section class="bg-white border-y border-stone-200">
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <div class="max-w-3xl">
+
+          <p class="text-sm font-semibold text-stone-500 uppercase tracking-widest">
+            Mahsulot haqida
+          </p>
+
+          <h2 class="text-3xl font-extrabold mt-3">
+            Qulaylik va zamonaviy dizayn bir joyda
+          </h2>
+
+          <p class="text-stone-600 leading-8 mt-6">
+            Yotoqxona garnituri zamonaviy uylar uchun ishlab chiqilgan.
+            Minimalistik shakllar, sifatli materiallar va amaliy saqlash
+            yechimlari xonangizdan samarali foydalanish imkonini beradi.
+          </p>
+
+          <p class="text-stone-600 leading-8 mt-4">
+            Rang va ayrim o‘lchamlarni xonangiz dizayniga moslab tanlash
+            imkoniyati mavjud.
+          </p>
+
+        </div>
+
+
+        <!-- Features -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+
+            <div class="text-2xl">
+              ✨
+            </div>
+
+            <h3 class="font-bold mt-4">
+              Premium dizayn
+            </h3>
+
+            <p class="text-sm text-stone-500 mt-2">
+              Zamonaviy va minimalistik ko‘rinish.
+            </p>
+
+          </div>
+
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+
+            <div class="text-2xl">
+              🪵
+            </div>
+
+            <h3 class="font-bold mt-4">
+              Sifatli material
+            </h3>
+
+            <p class="text-sm text-stone-500 mt-2">
+              Kundalik foydalanish uchun mustahkam.
+            </p>
+
+          </div>
+
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+
+            <div class="text-2xl">
+              🎨
+            </div>
+
+            <h3 class="font-bold mt-4">
+              Rang tanlovi
+            </h3>
+
+            <p class="text-sm text-stone-500 mt-2">
+              Interyerga mos ranglarni tanlang.
+            </p>
+
+          </div>
+
+
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200">
+
+            <div class="text-2xl">
+              🔧
+            </div>
+
+            <h3 class="font-bold mt-4">
+              O‘rnatish
+            </h3>
+
+            <p class="text-sm text-stone-500 mt-2">
+              Mutaxassislar tomonidan o‘rnatiladi.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      <div class="rounded-3xl bg-stone-900 text-white p-8 sm:p-12 lg:p-16 text-center">
+
+        <p class="text-stone-400 font-semibold">
+          Sizga yoqdimi?
+        </p>
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">
+          Buyurtmangizni hoziroq qoldiring
+        </h2>
+
+        <p class="text-stone-400 max-w-xl mx-auto mt-4">
+          Ma’lumotlaringizni qoldiring. Mutaxassisimiz siz bilan bog‘lanib,
+          barcha tafsilotlarni kelishib oladi.
+        </p>
+
+        <button
+          onclick="openOrderModal()"
+          class="mt-8 bg-white text-stone-900 px-7 py-4 rounded-2xl font-bold hover:bg-stone-100 transition">
+
+          Buyurtma berish
+
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="bg-stone-950 text-white">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <div>
+
+          <div class="flex items-center gap-3">
+
+            <div class="w-10 h-10 bg-white text-stone-900 rounded-xl flex items-center justify-center font-bold">
+              BM
+            </div>
+
+            <div>
+              <p class="font-bold">
+                BARAKA MEBEL
+              </p>
+            </div>
+
+          </div>
+
+          <p class="text-stone-400 text-sm leading-6 mt-5">
+            Uyingiz uchun zamonaviy, sifatli va qulay mebellar.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-bold">
+            Menyu
+          </h3>
+
+          <div class="flex flex-col gap-3 mt-5 text-sm text-stone-400">
+
+            <a href="index.html" class="hover:text-white">
+              Bosh sahifa
+            </a>
+
+            <a href="products.html" class="hover:text-white">
+              Mahsulotlar
+            </a>
+
+            <a href="services.html" class="hover:text-white">
+              Xizmatlar
+            </a>
+
+            <a href="about.html" class="hover:text-white">
+              Biz haqimizda
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-bold">
+            Xizmatlar
+          </h3>
+
+          <div class="flex flex-col gap-3 mt-5 text-sm text-stone-400">
+
+            <span>O‘lchov olish</span>
+            <span>Individual dizayn</span>
+            <span>Yetkazib berish</span>
+            <span>O‘rnatish</span>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-bold">
+            Bog‘lanish
+          </h3>
+
+          <div class="flex flex-col gap-3 mt-5 text-sm text-stone-400">
+
+            <a href="tel:+998901234567" class="hover:text-white">
+              +998 90 123 45 67
+            </a>
+
+            <span>
+              Andijon, O‘zbekiston
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="border-t border-stone-800 mt-12 pt-6 text-center text-sm text-stone-500">
+
+        © 2026 Baraka Mebel. Barcha huquqlar himoyalangan.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= ORDER MODAL ================= -->
+
+  <div
+    id="orderModal"
+    class="fixed inset-0 z-[100] hidden">
+
+    <!-- Overlay -->
+    <div
+      onclick="closeOrderModal()"
+      class="absolute inset-0 bg-black/60 backdrop-blur-sm">
+    </div>
+
+
+    <!-- Modal -->
+    <div class="relative min-h-screen flex items-center justify-center p-4">
+
+      <div
+        class="bg-white w-full max-w-xl rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+
+        <!-- Modal Header -->
+        <div class="flex items-center justify-between p-6 sm:p-8 border-b border-stone-200">
+
+          <div>
+
+            <p class="text-sm text-stone-500">
+              Baraka Mebel
+            </p>
+
+            <h2 class="text-2xl font-extrabold mt-1">
+              Buyurtma berish
+            </h2>
+
+          </div>
+
+
+          <button
+            onclick="closeOrderModal()"
+            class="w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center hover:bg-stone-200 transition">
+
+            <svg class="w-5 h-5"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24">
+
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"/>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+
+        <!-- Form -->
+        <form
+          id="orderForm"
+          class="p-6 sm:p-8">
+
+          <!-- Product -->
+          <div class="bg-stone-50 rounded-2xl p-4 mb-6">
+
+            <div class="flex items-center gap-4">
+
+              <img
+                src="assets/images/bedroom-1.jpg"
+                class="w-16 h-16 rounded-xl object-cover"
+                alt="Yotoqxona garnituri"
+              />
+
+              <div class="flex-1">
+
+                <p class="text-sm text-stone-500">
+                  Tanlangan mahsulot
+                </p>
+
+                <p class="font-bold">
+                  Yotoqxona garnituri
+                </p>
+
+                <p class="text-sm font-semibold mt-1">
+                  15 500 000 so‘m
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Name -->
+          <div>
+
+            <label class="block text-sm font-semibold mb-2">
+              Ismingiz *
+            </label>
+
+            <input
+              id="customerName"
+              type="text"
+              required
+              placeholder="Ismingizni kiriting"
+              class="w-full px-4 py-3.5 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition"
+            />
+
+          </div>
+
+
+          <!-- Phone -->
+          <div class="mt-5">
+
+            <label class="block text-sm font-semibold mb-2">
+              Telefon raqamingiz *
+            </label>
+
+            <input
+              id="customerPhone"
+              type="tel"
+              required
+              placeholder="+998 90 123 45 67"
+              class="w-full px-4 py-3.5 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition"
+            />
+
+          </div>
+
+
+          <!-- Color -->
+          <div class="mt-5">
+
+            <label class="block text-sm font-semibold mb-2">
+              Rang
+            </label>
+
+            <select
+              id="orderColor"
+              class="w-full px-4 py-3.5 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-stone-900 bg-white">
+
+              <option>Krem</option>
+              <option>Jigarrang</option>
+              <option>Kulrang</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Size -->
+          <div class="mt-5">
+
+            <label class="block text-sm font-semibold mb-2">
+              O‘lcham
+            </label>
+
+            <select
+              class="w-full px-4 py-3.5 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-stone-900 bg-white">
+
+              <option>180 × 200 cm</option>
+              <option>160 × 200 cm</option>
+              <option>200 × 200 cm</option>
+              <option>Individual o‘lcham</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Message -->
+          <div class="mt-5">
+
+            <label class="block text-sm font-semibold mb-2">
+              Qo‘shimcha izoh
+            </label>
+
+            <textarea
+              rows="4"
+              placeholder="Qo‘shimcha talablaringiz bo‘lsa yozing..."
+              class="w-full px-4 py-3.5 rounded-xl border border-stone-200 outline-none focus:ring-2 focus:ring-stone-900 resize-none transition"></textarea>
+
+          </div>
+
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="w-full mt-6 bg-stone-900 text-white py-4 rounded-xl font-bold hover:bg-stone-800 transition">
+
+            Buyurtmani yuborish
+
+          </button>
+
+
+          <p class="text-xs text-stone-400 text-center mt-4">
+            Ma’lumotlaringiz faqat buyurtmani bog‘lanish uchun ishlatiladi.
+          </p>
+
+        </form>
+
+
+        <!-- Success -->
+        <div
+          id="successMessage"
+          class="hidden p-8 text-center">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center">
+
+            <svg class="w-10 h-10 text-green-600"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24">
+
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"/>
+
+            </svg>
+
+          </div>
+
+
+          <h3 class="text-2xl font-extrabold mt-6">
+            Buyurtma qabul qilindi! 🎉
+          </h3>
+
+          <p class="text-stone-500 mt-3 leading-6">
+            Rahmat! Tez orada mutaxassisimiz siz bilan bog‘lanib,
+            buyurtma tafsilotlarini kelishib oladi.
+          </p>
+
+
+          <button
+            onclick="closeOrderModal()"
+            class="mt-7 bg-stone-900 text-white px-7 py-3 rounded-xl font-semibold">
+
+            Yopish
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    // Mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+
+    // Product gallery
+    function changeImage(image, button) {
+
+      const mainImage = document.getElementById("mainImage");
+
+      mainImage.src = image;
+
+      document.querySelectorAll(".thumbnail").forEach(btn => {
+        btn.classList.remove("border-stone-900");
+        btn.classList.add("border-transparent");
+      });
+
+      button.classList.remove("border-transparent");
+      button.classList.add("border-stone-900");
+
+    }
+
+
+    // Color selection
+    function selectColor(color, button) {
+
+      document.getElementById("selectedColor").textContent = color;
+
+      document.querySelectorAll(".colorBtn").forEach(btn => {
+        btn.classList.remove("ring-stone-900");
+        btn.classList.add("ring-transparent");
+      });
+
+      button.classList.remove("ring-transparent");
+      button.classList.add("ring-stone-900");
+
+      document.getElementById("orderColor").value = color;
+
+    }
+
+
+    // Open modal
+    function openOrderModal() {
+
+      document.getElementById("orderModal").classList.remove("hidden");
+
+      document.body.classList.add("overflow-hidden");
+
+    }
+
+
+    // Close modal
+    function closeOrderModal() {
+
+      document.getElementById("orderModal").classList.add("hidden");
+
+      document.body.classList.remove("overflow-hidden");
+
+    }
+
+
+    // Submit order
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      this.classList.add("hidden");
+
+      document.getElementById("successMessage").classList.remove("hidden");
+
+    });
+
+
+    // ESC orqali modalni yopish
+    document.addEventListener("keydown", function(event) {
+
+      if (event.key === "Escape") {
+        closeOrderModal();
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

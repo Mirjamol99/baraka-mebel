@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Baraka Mebel — Sifatli va zamonaviy mebellar</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- ================= HEADER ================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="h-20 flex items-center justify-between">
+
+                <!-- LOGO -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-stone-900 text-white flex items-center justify-center">
+                        <span class="text-xl font-bold">B</span>
+                    </div>
+
+                    <div>
+                        <h1 class="font-extrabold text-lg leading-none">
+                            BARAKA
+                        </h1>
+                        <p class="text-xs tracking-[0.25em] text-stone-500 mt-1">
+                            MEBEL
+                        </p>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                       class="text-sm font-semibold text-stone-900 hover:text-stone-500 transition">
+                        Bosh sahifa
+                    </a>
+
+                    <a href="products.html"
+                       class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition">
+                        Mahsulotlar
+                    </a>
+
+                    <a href="services.html"
+                       class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition">
+                        Xizmatlar
+                    </a>
+
+                    <a href="about.html"
+                       class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition">
+                        Biz haqimizda
+                    </a>
+
+                    <a href="contact.html"
+                       class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition">
+                        Aloqa
+                    </a>
+                </nav>
+
+                <!-- DESKTOP BUTTON -->
+                <a href="contact.html"
+                   class="hidden sm:inline-flex bg-stone-900 text-white px-5 py-3 rounded-xl text-sm font-semibold hover:bg-stone-700 transition">
+                    Buyurtma berish
+                </a>
+
+                <!-- MOBILE BUTTON -->
+                <button
+                    id="menuBtn"
+                    class="md:hidden w-11 h-11 rounded-xl border border-stone-200 flex items-center justify-center text-xl"
+                    aria-label="Menyu">
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu" class="hidden md:hidden pb-5">
+                <nav class="flex flex-col gap-2">
+
+                    <a href="index.html"
+                       class="px-4 py-3 rounded-xl bg-stone-100 font-semibold">
+                        Bosh sahifa
+                    </a>
+
+                    <a href="products.html"
+                       class="px-4 py-3 rounded-xl hover:bg-stone-100">
+                        Mahsulotlar
+                    </a>
+
+                    <a href="services.html"
+                       class="px-4 py-3 rounded-xl hover:bg-stone-100">
+                        Xizmatlar
+                    </a>
+
+                    <a href="about.html"
+                       class="px-4 py-3 rounded-xl hover:bg-stone-100">
+                        Biz haqimizda
+                    </a>
+
+                    <a href="contact.html"
+                       class="px-4 py-3 rounded-xl hover:bg-stone-100">
+                        Aloqa
+                    </a>
+
+                    <a href="contact.html"
+                       class="mt-2 text-center bg-stone-900 text-white px-4 py-3 rounded-xl font-semibold">
+                        Buyurtma berish
+                    </a>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section class="pt-28 pb-16 sm:pt-32 lg:pt-40 lg:pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+                    <!-- TEXT -->
+                    <div>
+
+                        <span class="inline-flex items-center gap-2 bg-stone-100 border border-stone-200 px-4 py-2 rounded-full text-sm font-medium text-stone-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            Sifatli mebel ishlab chiqarish
+                        </span>
+
+                        <h2 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
+                            Uyingiz uchun
+                            <span class="text-stone-500">
+                                qulaylik va uslub.
+                            </span>
+                        </h2>
+
+                        <p class="mt-6 text-base sm:text-lg text-stone-600 leading-8 max-w-xl">
+                            Zamonaviy dizayn, sifatli materiallar va sizning
+                            didingizga mos individual mebellarni yaratamiz.
+                        </p>
+
+                        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+
+                            <a href="products.html"
+                               class="inline-flex justify-center items-center bg-stone-900 text-white px-6 py-4 rounded-xl font-semibold hover:bg-stone-700 transition">
+                                Mahsulotlarni ko‘rish
+                                <span class="ml-2">→</span>
+                            </a>
+
+                            <a href="contact.html"
+                               class="inline-flex justify-center items-center border border-stone-300 bg-white px-6 py-4 rounded-xl font-semibold hover:bg-stone-100 transition">
+                                Biz bilan bog‘lanish
+                            </a>
+
+                        </div>
+
+                        <!-- STATS -->
+                        <div class="mt-10 pt-8 border-t border-stone-200 grid grid-cols-3 gap-5">
+
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold">
+                                    10+
+                                </p>
+                                <p class="text-xs sm:text-sm text-stone-500 mt-1">
+                                    Yillik tajriba
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold">
+                                    500+
+                                </p>
+                                <p class="text-xs sm:text-sm text-stone-500 mt-1">
+                                    Tayyorlangan mebel
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold">
+                                    450+
+                                </p>
+                                <p class="text-xs sm:text-sm text-stone-500 mt-1">
+                                    Mamnun mijoz
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HERO IMAGE -->
+                    <div class="relative">
+
+                        <div class="absolute -top-5 -left-5 w-24 h-24 bg-stone-200 rounded-3xl -z-10"></div>
+
+                        <img
+                            src="assets/images/hero.jpg"
+                            alt="Baraka Mebel zamonaviy mebel"
+                            class="w-full h-[420px] sm:h-[520px] object-cover rounded-[2rem] shadow-2xl">
+
+                        <div class="absolute bottom-5 left-5 right-5 sm:left-7 sm:right-auto bg-white/95 backdrop-blur rounded-2xl p-4 shadow-xl sm:w-72">
+
+                            <div class="flex items-center gap-3">
+
+                                <div class="w-11 h-11 rounded-xl bg-stone-900 text-white flex items-center justify-center">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <p class="font-bold">
+                                        Sifat kafolati
+                                    </p>
+
+                                    <p class="text-xs text-stone-500 mt-1">
+                                        Har bir mahsulotga e'tibor bilan
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+        <section class="py-20 bg-white">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+
+                    <div>
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                            Mahsulotlar
+                        </span>
+
+                        <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">
+                            Mashhur mahsulotlar
+                        </h2>
+
+                        <p class="mt-3 text-stone-500 max-w-xl">
+                            Uyingiz uchun qulay va zamonaviy mebel variantlari.
+                        </p>
+                    </div>
+
+                    <a href="products.html"
+                       class="font-semibold text-sm hover:underline">
+                        Barchasini ko‘rish →
+                    </a>
+
+                </div>
+
+
+                <!-- PRODUCT GRID -->
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                    <!-- PRODUCT 1 -->
+                    <article class="group">
+
+                        <a href="product.html" class="block">
+
+                            <div class="overflow-hidden rounded-2xl bg-stone-100">
+                                <img
+                                    src="assets/images/sofa-1.jpg"
+                                    alt="Zamonaviy divan"
+                                    class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            </div>
+
+                            <div class="pt-4">
+
+                                <p class="text-xs text-stone-500 uppercase tracking-wider">
+                                    Divan
+                                </p>
+
+                                <h3 class="mt-1 text-lg font-bold">
+                                    Zamonaviy L-divan
+                                </h3>
+
+                                <p class="mt-2 font-semibold">
+                                    8 500 000 so‘m
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+                    <article class="group">
+
+                        <a href="product.html" class="block">
+
+                            <div class="overflow-hidden rounded-2xl bg-stone-100">
+                                <img
+                                    src="assets/images/kitchen-1.jpg"
+                                    alt="Oshxona mebeli"
+                                    class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            </div>
+
+                            <div class="pt-4">
+
+                                <p class="text-xs text-stone-500 uppercase tracking-wider">
+                                    Oshxona
+                                </p>
+
+                                <h3 class="mt-1 text-lg font-bold">
+                                    Premium oshxona
+                                </h3>
+
+                                <p class="mt-2 font-semibold">
+                                    12 800 000 so‘m
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- PRODUCT 3 -->
+                    <article class="group">
+
+                        <a href="product.html" class="block">
+
+                            <div class="overflow-hidden rounded-2xl bg-stone-100">
+                                <img
+                                    src="assets/images/bedroom-1.jpg"
+                                    alt="Yotoqxona mebeli"
+                                    class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            </div>
+
+                            <div class="pt-4">
+
+                                <p class="text-xs text-stone-500 uppercase tracking-wider">
+                                    Yotoqxona
+                                </p>
+
+                                <h3 class="mt-1 text-lg font-bold">
+                                    Yotoqxona garnituri
+                                </h3>
+
+                                <p class="mt-2 font-semibold">
+                                    15 500 000 so‘m
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- PRODUCT 4 -->
+                    <article class="group">
+
+                        <a href="product.html" class="block">
+
+                            <div class="overflow-hidden rounded-2xl bg-stone-100">
+                                <img
+                                    src="assets/images/office-1.jpg"
+                                    alt="Ofis mebeli"
+                                    class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            </div>
+
+                            <div class="pt-4">
+
+                                <p class="text-xs text-stone-500 uppercase tracking-wider">
+                                    Ofis
+                                </p>
+
+                                <h3 class="mt-1 text-lg font-bold">
+                                    Minimal ofis stoli
+                                </h3>
+
+                                <p class="mt-2 font-semibold">
+                                    4 200 000 so‘m
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center max-w-2xl mx-auto">
+
+                    <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                        Kategoriyalar
+                    </span>
+
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">
+                        Har bir xona uchun
+                    </h2>
+
+                </div>
+
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <a href="products.html"
+                       class="group relative overflow-hidden rounded-2xl h-72">
+
+                        <img
+                            src="assets/images/sofa-2.jpg"
+                            alt="Divanlar"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+                        <div class="absolute inset-0 bg-black/40"></div>
+
+                        <div class="absolute bottom-5 left-5 text-white">
+                            <h3 class="text-2xl font-bold">
+                                Divanlar
+                            </h3>
+                            <p class="mt-1 text-sm text-white/80">
+                                Ko‘rish →
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="products.html"
+                       class="group relative overflow-hidden rounded-2xl h-72">
+
+                        <img
+                            src="assets/images/kitchen-2.jpg"
+                            alt="Oshxona mebellari"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+                        <div class="absolute inset-0 bg-black/40"></div>
+
+                        <div class="absolute bottom-5 left-5 text-white">
+                            <h3 class="text-2xl font-bold">
+                                Oshxona
+                            </h3>
+                            <p class="mt-1 text-sm text-white/80">
+                                Ko‘rish →
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="products.html"
+                       class="group relative overflow-hidden rounded-2xl h-72">
+
+                        <img
+                            src="assets/images/bedroom-2.jpg"
+                            alt="Yotoqxona mebellari"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+                        <div class="absolute inset-0 bg-black/40"></div>
+
+                        <div class="absolute bottom-5 left-5 text-white">
+                            <h3 class="text-2xl font-bold">
+                                Yotoqxona
+                            </h3>
+                            <p class="mt-1 text-sm text-white/80">
+                                Ko‘rish →
+                            </p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="products.html"
+                       class="group relative overflow-hidden rounded-2xl h-72">
+
+                        <img
+                            src="assets/images/office-2.jpg"
+                            alt="Ofis mebellari"
+                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+
+                        <div class="absolute inset-0 bg-black/40"></div>
+
+                        <div class="absolute bottom-5 left-5 text-white">
+                            <h3 class="text-2xl font-bold">
+                                Ofis
+                            </h3>
+                            <p class="mt-1 text-sm text-white/80">
+                                Ko‘rish →
+                            </p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY US ================= -->
+        <section class="py-20 bg-stone-900 text-white">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                    <div>
+
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-400">
+                            Nega biz?
+                        </span>
+
+                        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold">
+                            Sifat va qulaylikni
+                            bir joyda.
+                        </h2>
+
+                        <p class="mt-5 text-stone-400 leading-7 max-w-lg">
+                            Biz har bir buyurtmaga individual yondashamiz.
+                            Mebel tanlashdan tortib o‘rnatishgacha bo‘lgan
+                            jarayonni siz uchun qulay qilamiz.
+                        </p>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+
+                        <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="text-2xl">✓</div>
+                            <h3 class="mt-4 font-bold text-lg">
+                                Sifatli material
+                            </h3>
+                            <p class="mt-2 text-sm text-stone-400">
+                                Uzoq muddat foydalanish uchun ishonchli materiallar.
+                            </p>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="text-2xl">✦</div>
+                            <h3 class="mt-4 font-bold text-lg">
+                                Individual dizayn
+                            </h3>
+                            <p class="mt-2 text-sm text-stone-400">
+                                Sizning xohishingizga mos maxsus loyihalar.
+                            </p>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="text-2xl">⚡</div>
+                            <h3 class="mt-4 font-bold text-lg">
+                                Tez tayyorlash
+                            </h3>
+                            <p class="mt-2 text-sm text-stone-400">
+                                Buyurtmalarni kelishilgan muddatda tayyorlaymiz.
+                            </p>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="text-2xl">♡</div>
+                            <h3 class="mt-4 font-bold text-lg">
+                                Kafolat
+                            </h3>
+                            <p class="mt-2 text-sm text-stone-400">
+                                Mahsulotlarimiz sifatiga ishonamiz.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="py-20 bg-white">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                    <div class="overflow-hidden rounded-[2rem]">
+                        <img
+                            src="assets/images/about.jpg"
+                            alt="Baraka Mebel jamoasi"
+                            class="w-full h-[420px] object-cover">
+                    </div>
+
+                    <div>
+
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                            Biz haqimizda
+                        </span>
+
+                        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold">
+                            Biz faqat mebel emas,
+                            qulaylik yaratamiz.
+                        </h2>
+
+                        <p class="mt-5 text-stone-600 leading-8">
+                            Baraka Mebel zamonaviy dizayn, sifatli material
+                            va professional xizmatni birlashtiradi.
+                            Har bir loyiha mijozning ehtiyojidan kelib
+                            chiqib yaratiladi.
+                        </p>
+
+                        <a href="about.html"
+                           class="inline-flex mt-7 bg-stone-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-stone-700 transition">
+                            Batafsil ma'lumot
+                            <span class="ml-2">→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+        <section class="py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center max-w-2xl mx-auto">
+
+                    <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                        Xizmatlar
+                    </span>
+
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">
+                        Siz uchun to‘liq xizmat
+                    </h2>
+
+                </div>
+
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <div class="bg-white border border-stone-200 rounded-2xl p-6">
+                        <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-xl">
+                            📐
+                        </div>
+                        <h3 class="mt-5 font-bold text-lg">
+                            O‘lchov olish
+                        </h3>
+                        <p class="mt-2 text-sm text-stone-500 leading-6">
+                            Xonangiz o‘lchamlarini hisoblab, mos variant taklif qilamiz.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-stone-200 rounded-2xl p-6">
+                        <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-xl">
+                            ✦
+                        </div>
+                        <h3 class="mt-5 font-bold text-lg">
+                            Dizayn
+                        </h3>
+                        <p class="mt-2 text-sm text-stone-500 leading-6">
+                            Sizning didingizga mos individual dizayn yaratamiz.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-stone-200 rounded-2xl p-6">
+                        <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-xl">
+                            🚚
+                        </div>
+                        <h3 class="mt-5 font-bold text-lg">
+                            Yetkazib berish
+                        </h3>
+                        <p class="mt-2 text-sm text-stone-500 leading-6">
+                            Tayyor mahsulotni manzilingizgacha yetkazib beramiz.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-stone-200 rounded-2xl p-6">
+                        <div class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center text-xl">
+                            🔧
+                        </div>
+                        <h3 class="mt-5 font-bold text-lg">
+                            O‘rnatish
+                        </h3>
+                        <p class="mt-2 text-sm text-stone-500 leading-6">
+                            Mebelni professional tarzda o‘rnatib beramiz.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TESTIMONIALS ================= -->
+        <section class="py-20 bg-white">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center">
+
+                    <span class="text-sm font-bold uppercase tracking-widest text-stone-500">
+                        Mijozlar fikri
+                    </span>
+
+                    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold">
+                        Biz haqimizda nima deyishadi?
+                    </h2>
+
+                </div>
+
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                    <div class="p-6 rounded-2xl border border-stone-200">
+                        <div class="text-amber-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-4 text-stone-600 leading-7">
+                            “Mebel sifati va dizayni juda yoqdi.
+                            Buyurtmamiz aynan xohlaganimizdek tayyorlandi.”
+                        </p>
+
+                        <p class="mt-5 font-bold">
+                            Azizbek
+                        </p>
+
+                        <p class="text-sm text-stone-500">
+                            Andijon
+                        </p>
+                    </div>
+
+
+                    <div class="p-6 rounded-2xl border border-stone-200">
+                        <div class="text-amber-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-4 text-stone-600 leading-7">
+                            “Oshxona mebelimiz juda chiroyli chiqdi.
+                            Xizmat ko‘rsatish ham juda yaxshi.”
+                        </p>
+
+                        <p class="mt-5 font-bold">
+                            Madina
+                        </p>
+
+                        <p class="text-sm text-stone-500">
+                            Farg‘ona
+                        </p>
+                    </div>
+
+
+                    <div class="p-6 rounded-2xl border border-stone-200">
+                        <div class="text-amber-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-4 text-stone-600 leading-7">
+                            “O‘lchov olishdan o‘rnatishgacha hammasi
+                            professional tarzda bajarildi.”
+                        </p>
+
+                        <p class="mt-5 font-bold">
+                            Sardor
+                        </p>
+
+                        <p class="text-sm text-stone-500">
+                            Namangan
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="bg-stone-900 rounded-[2rem] p-8 sm:p-12 lg:p-16 text-white text-center">
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold">
+                        Uyingiz uchun mebel tanladingizmi?
+                    </h2>
+
+                    <p class="mt-5 text-stone-400 max-w-2xl mx-auto">
+                        Loyihangizni biz bilan birga amalga oshiring.
+                        Sizning g'oyangiz — bizning mahoratimiz.
+                    </p>
+
+                    <a href="contact.html"
+                       class="inline-flex mt-8 bg-white text-stone-900 px-7 py-4 rounded-xl font-bold hover:bg-stone-200 transition">
+                        Buyurtma berish →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-stone-950 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- BRAND -->
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 rounded-xl bg-white text-stone-900 flex items-center justify-center font-extrabold">
+                            B
+                        </div>
+
+                        <div>
+                            <p class="font-extrabold">
+                                BARAKA
+                            </p>
+                            <p class="text-xs tracking-[0.2em] text-stone-500">
+                                MEBEL
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="mt-5 text-sm text-stone-500 leading-6">
+                        Sifatli mebel — qulay hayot.
+                    </p>
+
+                </div>
+
+
+                <!-- LINKS -->
+                <div>
+
+                    <h3 class="font-bold">
+                        Tezkor havolalar
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-3 text-sm text-stone-500">
+
+                        <a href="index.html" class="hover:text-white transition">
+                            Bosh sahifa
+                        </a>
+
+                        <a href="products.html" class="hover:text-white transition">
+                            Mahsulotlar
+                        </a>
+
+                        <a href="services.html" class="hover:text-white transition">
+                            Xizmatlar
+                        </a>
+
+                        <a href="about.html" class="hover:text-white transition">
+                            Biz haqimizda
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SERVICES -->
+                <div>
+
+                    <h3 class="font-bold">
+                        Xizmatlar
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-3 text-sm text-stone-500">
+
+                        <p>Individual mebel</p>
+                        <p>O'lchov olish</p>
+                        <p>Yetkazib berish</p>
+                        <p>O'rnatish</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div>
+
+                    <h3 class="font-bold">
+                        Aloqa
+                    </h3>
+
+                    <div class="mt-5 flex flex-col gap-4 text-sm text-stone-500">
+
+                        <p>
+                            📞 +998 90 123 45 67
+                        </p>
+
+                        <p>
+                            📍 Andijon, O'zbekiston
+                        </p>
+
+                        <p>
+                            🕐 Dushanba — Shanba
+                            <br>
+                            09:00 — 19:00
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-sm text-stone-600">
+
+                <p>
+                    © 2026 Baraka Mebel. Barcha huquqlar himoyalangan.
+                </p>
+
+                <p>
+                    Sifat bilan yaratilgan.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    </script>
+
+</body>
+</html>
